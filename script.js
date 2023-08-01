@@ -69,7 +69,7 @@ var StopWatch = function (_React$Component) {
         React.createElement(
           "h2",
           { className: "border px-3 py-4 rounded my-3 mx-auto text-center", style: { maxWidth: "300px" } },
-          Math.floor(this.state.timePassedInMilliseconds),
+          Math.floor(this.state.timePassedInMilliseconds / 1000),
           " s"
         ),
         React.createElement(
@@ -88,39 +88,6 @@ var StopWatch = function (_React$Component) {
           React.createElement(
             "button",
             { className: "btn btn-outline-warning", onClick: this.reset },
-            "reset"
-          )
-        )
-      );
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return React.createElement(
-        "div",
-        null,
-        React.createElement(
-          "h2",
-          { className: "border px-3 py-4 rounded my-3 mx-auto text-center", style: { maxWidth: "300px" } },
-          Math.floor(this.state.timePassedInMilliseconds / 1000),
-          " s"
-        ),
-        React.createElement(
-          "div",
-          { className: "d-flex justify-content-center" },
-          React.createElement(
-            "button",
-            { className: "btn btn-outline-primary mr-2" },
-            "start"
-          ),
-          React.createElement(
-            "button",
-            { className: "btn btn-outline-danger mr-2" },
-            "stop"
-          ),
-          React.createElement(
-            "button",
-            { className: "btn btn-outline-warning" },
             "reset"
           )
         )
