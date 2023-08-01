@@ -29,7 +29,7 @@ var StopWatch = function (_React$Component) {
         React.createElement(
           "h2",
           { className: "border px-3 py-4 rounded my-3 mx-auto text-center", style: { maxWidth: "300px" } },
-          Math.floor(this.state.timePassedInMilliSeconds / 1000),
+          Math.floor(this.state.timePassedInMilliseconds / 1000),
           " s"
         ),
         React.createElement(
